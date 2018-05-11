@@ -108,7 +108,68 @@ main .main__about{
 	min-width: 100%
 }
 
+.main__team{
+	background: #000;
+	text-align: center;
+	padding: 100px 0 165px 0;
+	color: #fff;
+}
+.main__team h1{
+	font-size: 44px;
+	padding-bottom: 30px;
+}
+.line{
+	width: 100px;
+	height: 3px;
+	background: #fcac45;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 85px;
+}
+.photo{
+	background: #d7d7d7;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+.team__cards{
+	display: flex;
+}
+.card{
+	margin: 0 40px;
+}
+.name{
+	font-size: 20px;
+	margin-bottom: 7px;
+}
+.position{
+	font-size: 16px;
+	margin-bottom: 35px;
+}
+.about__position{
+	font-size: 14px;
+}
 
+.services__cards{
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+}
+.main__services h1{
+	text-align: center;
+	padding: 100px 0 30px 0;	
+}
+.main__services p{
+	margin-bottom: 100px;
+	color: #6c6c6c;
+	text-align: center;
+}
+.services__card h4{
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
 
 @media screen and (max-width: 1200px) {
 	nav{
@@ -181,5 +242,13 @@ main .main__about{
 	.about__right h1{
 		margin-top: 10px;
 		font-size: 20px;
+	}
+	
+	.team__cards{
+		flex-direction: column;
+	}
+	
+	.services__cards{
+		grid-template-columns: auto;
 	}
 }
